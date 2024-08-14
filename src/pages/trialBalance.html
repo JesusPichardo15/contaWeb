@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/trialBalance.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="balance-container" id="balance-container">
+        <div class="header" id="header">
+          <h2 class="title" id="title">Balanza de Comprobación</h2>
+        </div>
+        <div class="assets" id="assets">
+          <h3 class="subtitle" id="assets-subtitle">Activos</h3>
+          <table class="table" id="assets-table">
+            <tr>
+              <th class="th" id="th-1">Cuenta</th>
+              <th class="th" id="th-2">Debito</th>
+              <th class="th" id="th-3">Credito</th>
+              <th class="th" id="th-4">Saldo Deudor</th>
+              <th class="th" id="th-5">Saldo Acreedor</th>
+            </tr>
+            <!-- Agregar más cuentas aquí -->
+          </table>
+        </div>
+        <div class="liabilities" id="liabilities">
+          <h3 class="subtitle" id="liabilities-subtitle">Pasivos</h3>
+          <table class="table" id="liabilities-table">
+            <tr>
+              <th class="th" id="th-6">Cuenta</th>
+              <th class="th" id="th-7">Debito</th>
+              <th class="th" id="th-8">Credito</th>
+              <th class="th" id="th-9">Saldo Deudor</th>
+              <th class="th" id="th-10">Saldo Acreedor</th>
+            </tr>
+          </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/src/js/trialBalance.js" type="module"></script>
+</body>
+</html>

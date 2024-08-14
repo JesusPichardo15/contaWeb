@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* gris claro */
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff; /* blanco */
+    border: 1px solid #ddd; /* gris claro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accounts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.t-account {
+    flex-basis: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc; /* gris claro */
+    border-radius: 10px;
+    background-color: #f0f0f0; /* gris claro */
+}
+
+.debit,.credit {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* gris claro */
+}
+
+.debit {
+    background-color: #c9c4b5; /* café claro */
+}
+
+.credit {
+    background-color: #e5e5e5; /* gris claro */
+}
+
+h1, h2 {
+    color: #333; /* negro */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc; /* gris claro */
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00698f; /* azul */
+    margin-top: 20px;
+}
