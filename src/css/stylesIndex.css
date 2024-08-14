@@ -1,0 +1,265 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    height: 89vh;
+    width: 90vw;
+    margin: 40px 50px 20px 50px;
+    padding: 0 0 0 30px;
+    min-width: 320px;
+    max-width: 1200px;
+    background-color: #f5f5f5;
+}
+
+/*
+    style for main containers
+*/
+#main-containter {
+    display: flex;
+    height: 125vh;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+#menu-container {
+    margin: 0;
+    padding: 0;
+    border-right: 5px solid #8b5e3d;
+    background-color: #8b5e3d;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#data-container {
+    padding-left: 30px;
+    width: 90%;
+    height: 80%;
+}
+
+#menuSeccionAction-container {
+    display: inline-flex;
+    border-color: #8b5e3d;
+    width: 100%;
+    justify-content: center;
+}
+
+#contaSeccionAction-containter {
+    display: inline-flex;
+    padding-bottom: 15vh;
+    width: 100%;
+    justify-content: center;
+}
+
+#enteringData-container {
+    padding-left: 56px;
+    height: 75%;
+    width: 100%;
+}
+
+#contOperation {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*
+    style for menu elements
+*/
+#labelAcount {
+    font-size: 6vh;
+    color: #fff;
+    padding: 20px;
+}
+
+#labelAcountSelection {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#labelAcountSelectionMod {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+#menu-container button {
+    color: #fff;
+    background-color: #8b5e3d;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#menu-container button:hover {
+    background-color: #6b4a35;
+}
+
+/*
+    style for contaSectionAction elements
+*/
+
+#contaSeccionAction-containter button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #8b5e3d;
+    border-radius: 10px;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#contaSeccionAction-containter button:hover {
+    background-color: #6b4a35;
+}
+
+/*
+    style for enteringData elements
+*/
+#annuncementLabel,
+#ContOperationLabel {
+    font-size: 6vh;
+    color: #8b5e3d;
+}
+
+#inputAccount {
+    font-size: 15px;
+    width: 44.5%;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#inputAmount {
+    font-size: 15px;
+    width: 41.5%;
+    color: #333;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#enteringData-container label {
+    font-size: 25px;
+    color: #8b5e3d;
+}
+
+#buttonCleanData,
+#buttonSaveData {
+    font-size: 16px;
+    color: #fff;
+    background-color: #8b5e3d;
+    border-radius: 10px;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#buttonCleanData:hover,
+#buttonSaveData:hover {
+    background-color: #6b4a35;
+}
+
+/*
+    style for responsive
+*/
+@media (max-width: 768px) {
+    body {
+        margin: 1.5vh 1vw 1vh 1vw;
+    }
+
+    #menu-container {
+        margin-bottom: 1.5vh;
+    }
+
+    #ContOperationLabel,
+    #labelAcountSelection {
+        margin-left: 0;
+    }
+
+    #enteringData-container {
+        padding-left: 1vw;
+    }
+
+    #labelAcountSelection,
+    #menu-container button,
+    #contaSeccionAction-containter button,
+    #inputAmount,
+    #ActivityNumber,
+    #inputAccount {
+        font-size: 1.2vw;
+    }
+    #enteringData-container label {
+        font-size: 1.2vw;
+    }
+    #annuncementLabel,
+    #labelAcountSelectionMod,
+    #ContOperationLabel,
+    #labelAcount{
+        font-size: 2vw;
+    }
+
+    #menu-container button {
+        right: 1vw;
+    }
+
+    #menu-container {
+        border-bottom-width: 1px;
+    }
+    #menu-container button {
+        padding: 0.5vw 1vw;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin: 1vh 0.5vw 0.5vh 0.5vw;
+    }
+
+    #menu-container {
+        margin-bottom: 1vh;
+    }
+
+    #ContOperationLabel,
+    #labelAcountSelection {
+        margin-left: 0;
+    }
+
+    #enteringData-container {
+        padding-left: 0.5vw;
+    }
+
+    #labelAcountSelection,
+    #menu-container button,
+    #contaSeccionAction-containter button,
+    #inputAmount,
+    #ActivityNumber,
+    #inputAccount {
+        font-size: 0.8vw;
+    }
+    #enteringData-container label {
+        font-size:0.8vw;
+    }
+    #annuncementLabel,
+    #labelAcountSelectionMod,
+    #ContOperationLabel,
+    #labelAcount{
+        font-size: 1.5vw;
+    }
+
+    #menu-container button {
+        right: 0.5vw;
+    }
+
+    #menu-container {
+        border-bottom-width: 1px;
+    }
+    #menu-container button {
+        padding: 0.3vw 0.6vw;
+    }
+}

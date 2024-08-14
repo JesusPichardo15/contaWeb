@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTA</title>
+    <link rel="stylesheet" href="../css/stylesIndex.css">
+</head>
+<body>
+    <div id="main-containter" >
+        <div id="menu-container">
+            <div id="menuSeccionAction-container">
+                <label id="labelAcount">CATALOGO DE CUENTAS</label>
+            </div>
+            <div id="menuSeccionAction-container">
+                <button id="active" class="active">Activos</button>
+                <button id="passive" class="passive">Pasivos</button>
+                <button id="capital" class="capital">Capital</button>
+                <button id="expenses" class="expenses">Gastos</button>
+            </div><br>
+            <label id="labelAcountSelection">Seleccione un tipo de cuenta</label>
+        </div><br>
+        <div id="data-container">
+            <div id="contOperation">
+                <label id="ContOperationLabel">OPERACIONES</label>
+            </div>
+            <div id="contaSeccionAction-containter">
+                <button id="diaryBook" class="diaryBook">Libro Diario</button>
+                <button id="tAcounts" class="tAcounts">Cuentas T</button>
+                <button id= "comparativeBalanceSheet" class="comparativeBalanceSheet">Balanza de Comparacion</button>
+                <button id="incomeStatement" class="incomeStatement">Estado de Resultados</button>
+                <button id="balanceSheet" class="balanceSheet">Balance General</button>
+            </div> <br>
+            <div id="enteringData-container">
+                <div>
+                    <label for="ActivityNumber" id="activityLabel">Numero de actividad: </label>
+                    <input type="number" id="ActivityNumber">
+                </div><br><br>
+                <label for="inputAcount">Cuenta:</label>
+                <input type="text"id="inputAccount"><br><br>
+                <input type="radio" id="chCharge" name="TypeAction" value="option1"> <label for="chCharge">Cargo</label>
+                <input type="radio" id="chFee" name="TypeAction" value="option2"> <label for="chFee">Abono</label> <br><br>
+                <label for="inputAmount" id="amountLabel">Cantidad: </label>
+                <input type="number" id="inputAmount"> <br><br>
+                <button id="buttonSaveData" class="buttonSaveData">Guardar</button>
+                <button id="buttonCleanData" class="buttonCleanData">Eliminar Datos Guardaos</button>
+                <label id="annuncementLabel"></label>
+            </div>
+        </div>
+    </div>
+    <script src="../js/scriptIndex.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

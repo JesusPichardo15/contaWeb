@@ -1,0 +1,35 @@
+.results-table {
+    width: 800px; /* Increase the width of the table */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+  }
+  
+  .results-table th,
+  .results-table td {
+    border: 1px solid #ddd; /* Gray border */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .results-table th {
+    background-color: #337ab7; /* Blue background for headers */
+    color: #fff; /* White text for headers */
+    font-weight: bold;
+  }
+  
+  .results-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7; /* Light gray background for even rows */
+  }
+  
+  .results-table tbody tr:nth-child(odd) {
+    background-color: #fff; /* White background for odd rows */
+  }
+
+  #sendUOPEjercicio{
+    background-color: #337ab7; /* Blue background for headers */
+    color: #fff; /* White text for headers */
+    font-weight: bold;
+    box-shadow: 5px;
+    margin-left: 40%;
+    
+  }
